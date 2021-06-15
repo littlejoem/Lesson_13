@@ -2,8 +2,16 @@ package com.company;
 
     public class Main {
 
+        public static int sum (int a, int b) {
+            return a + b;
+        }
+
+        public static float sum (float a, float b, float c) {
+            return a + b - c;
+        }
+
         public static void main(String[] args) {
-            Shape circ = new Circle();
-            circ.draw();
+            System.out.println(sum(2, 3));
+            System.out.println(sum(2.5f, 3.89f, 8.456f));
         }
     }
